@@ -26,6 +26,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Rootless docker, available on Ubuntu (linux) only. not Mac
+if [ "$(uname)" == "Linux" ]; then
+    export PATH=$HOME/bin:$PATH
+    export DOCKER_HOST=unix:///run/user/1000/docker.sock
+fi
+
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
