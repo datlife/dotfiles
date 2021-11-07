@@ -68,7 +68,7 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages python zsh-syntax-highlighting)
+plugins=(git history-substring-search colored-man-pages python zsh-syntax-highlighting kubectl k3d helm gcloud)
 
 source $ZSH/oh-my-zsh.sh
 
