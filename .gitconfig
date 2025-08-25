@@ -1,3 +1,8 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [user]
-	email = hi@dat.works
+	email = tdat.nguyen93@gmail.com
 	name = Dat Nguyen
+	signingkey = 04E2FF7A255AB040E7058CE4F0720EA68552FB10!
+[commit]
+	gpgsign = true
